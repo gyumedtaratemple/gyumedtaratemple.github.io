@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Gyumed Tara Temple</title>
+    <title>Gyumed Tara Temple</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fceeaf;
+            background-color: #fceeaf; /* Updated background color */
             color: #333;
             text-align: center;
         }
         header {
-            background: #4CAF50;
-            color: white;
+            background: #ffffff;
+            color: black;
             padding: 20px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
         }
         .content {
             padding: 20px;
             text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
         }
         .section {
             margin-bottom: 20px;
@@ -34,83 +55,70 @@
             background: #ddd;
             margin-top: 20px;
         }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .contact-form button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #45a049;
-        }
-        .social-links {
+        .footer-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            align-items: center;
+            gap: 10px;
         }
-        .social-links a {
+        .footer-links a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
-        .social-links img {
-            width: 20px;
-            height: 20px;
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .logo-container h1 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+        }
+        .logo-container p {
+            font-size: 20px;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Contact Us - Gyumed Tara Temple</h1>
+        <div class="logo-container">
+            <img src="images/Logo.png" alt="Gyumed Tara Temple Logo"> <!-- Ensure the logo image has a transparent background -->
+            <h1>Gyumed Tara Temple New York</h1>
+            <p>ནིའུ་ཡོག་རྒྱུད་སྨྡད་སྒྲོལ་མ་ལྷ་ཁང</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://www.gyudmedschool.org/">Partner Monastery</a></li> <!-- Link to Partner Monastery section -->
+                <li><a href="#contact.html">Contact Us</a></li> <!-- Link to Contact Us section -->
+            </ul>
+        </nav>
     </header>
 
-    <div class="content">
         <div id="contact-us" class="section"> <!-- Contact Us Section -->
             <h2>Contact Us</h2>
             <p>For more information, please contact us at:</p>
-            <p>Email: <a href="mailto:info@gyumedtaratemple.org">info@gyumedtaratemple.org</a></p>
+            <p>Email: info@gyumedtaratemple.org</p>
             <p>Phone: 929-346-9094</p>
             <p>Address: 83-16 Cornish Ave, Elmhurst, New York 11373</p>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="section">
-            <h2>Send Us a Message</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.facebook.com/YourFacebookPage" target="_blank">
-                <img src="images/facebook-icon.png" alt="Facebook"> Facebook
-            </a>
-            <!-- Add other social media links as needed -->
+            <!-- Add any other contact methods, such as a contact form or additional social media links -->
         </div>
     </div>
 
     <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/profile.php?id=100081002011706" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook" style="width: 20px; height: 20px;"> Facebook
+            </a>
+        </div>
         <p>&copy; 2024 Gyumed Tara Temple. All rights reserved.</p>
     </footer>
 </body>
